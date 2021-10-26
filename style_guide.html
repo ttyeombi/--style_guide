@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/commonui.css">
     <style>
         hr {display:block; margin:0.2rem 0; width:100%; height:1px; background:#ccc;}
-        
+            
         .wrap {margin-bottom:0.2rem; padding:0.2rem 0.2rem 0.3rem; border-bottom:1px solid #000;}
         p.desc {margin-bottom:0.2rem; color:#0271e3}
         .nav {position:sticky; top:0; height:0.4rem; background:#fff; box-shadow:0 8px 6px 0px rgb(0 0 0 / 10%); margin-bottom:0.3rem;}
@@ -22,177 +22,193 @@
 <body >
 
     <h1 class="tlt_xl tlt_en bg_gray pdl2 pdt2 pdb2 pdr2 align_c">STYLE GUIDE</h1>
-    <ul class="nav">
-        <li><a href="#sec1">[1] 아이템 진열</a></li>
-        <li><a href="#sec2">[2] 타이틀</a></li>
-        <li><a href="#sec3">[3] 텍스트</a></li>
-        <li><a href="#sec4">[4] 버튼</a></li>
-        <li><a href="#sec5">[5] 배경색</a></li>
-        <li><a href="#sec6"></a></li>
-        <li><a href="#sec7"></a></li>
-        <li><a href="#sec8"></a></li>
+<ul class="nav pdl2 pdr2">
+    <li><a href="#sec0">[0] layout 너비</a></li>
+    <li><a href="#sec1">[1] 아이템 진열</a></li>
+    <li><a href="#sec2">[2] 타이틀</a></li>
+    <li><a href="#sec3">[3] 텍스트</a></li>
+    <li><a href="#sec4">[4] 버튼</a></li>
+    <li><a href="#sec5">[5] 배경색</a></li>
+    <li><a href="#sec6"></a></li>
+    <li><a href="#sec7"></a></li>
+</ul>
+<div class="wrap" id="sec0">
+    <h2 class="tlt_md">[0] layout 너비</h2>
+    <p class="desc">
+        [class*="inner"] {margin:0 auto;}<br>
+        [class*="inner"][class*="1420"] {max-width:14.2rem;}<br>
+        [class*="inner"][class*="985"] {max-width:9.85rem;}<br>
+        [class*="inner"][class*="980"] {max-width:9.8rem;}<br>
+        [class*="inner"][class*="600"] {max-width:6rem;}<br>
+        [class*="inner"][class*="500"] {max-width:5rem;}
+	</p>
+</div>
+<div class="wrap" id="sec1">
+    <h2 class="tlt_md">[1] 아이템 진열</h2>
+    <p class="desc">.prd_grid.grid2_2</p>
+    <ul class="prd_grid grid2_2">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
     </ul>
-    <div class="wrap" id="sec1">
-        <h2 class="tlt_md">[1] 아이템 진열</h2>
-        <p class="desc">.prd_grid.grid2_2</p>
-        <ul class="prd_grid grid2_2">
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-        </ul>
-        
-        <div class="mgb5"></div>
-        
-        <p class="desc">.prd_grid.grid3_2</p>
-        <ul class="prd_grid grid3_2">
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-        </ul>
 
-        <div class="mgb5"></div>
-        
-        <p class="desc">.prd_grid.grid4_2</p>
-        <ul class="prd_grid grid4_2">
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-        </ul>
+    <div class="mgb5"></div>
 
-        <div class="mgb5"></div>
-        
-        <p class="desc">.prd_gridgrid3_25</p>
-        <ul class="prd_grid grid2_25">
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-        </ul>
-        
-        <div class="mgb5"></div>
-        
-        <p class="desc">.prd_grid.grid4_2</p>
-        <ul class="prd_grid grid3_25">
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-        </ul>
-    </div>
-    <!-- ------------------------------------------------- -->
-    
-    <div class="wrap" id="sec2">
-        <h2 class="tlt_md">[2] 타이틀</h2>
-        <p class="desc">.tlt_x2l</p>
-        <h3 class="tlt_x2l">주문내역상세</h3>
-        <p class="desc">.tlt_x2l.tlt_en</p>
-        <h3 class="tlt_x2l tlt_en">Sign In</h3>
-        <p class="desc">.tlt_xl</p>
-        <h3 class="tlt_xl">주문내역상세</h3>
-        <br>
-        <p class="desc">.tlt_lg</p>
-        <h3 class="tlt_lg">주문내역상세</h3>
-        <p class="desc">.tlt_md</p>
-        <h3 class="tlt_md">주문내역상세</h3>
-        <br>
-        <p class="desc">.tlt_sm</p>
-        <h3 class="tlt_sm">주문내역상세</h3>
-        <br>
-        <p class="desc">.tlt_xs</p>
-        <h3 class="tlt_xs">주문내역상세</h3>
-    </div>
+    <p class="desc">.prd_grid.grid3_2</p>
+    <ul class="prd_grid grid3_2">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
 
-    <div class="wrap" id="sec3">
-        <h2 class="tlt_md">[3] 텍스트</h2>
-        <p class="desc">.txt_xl</p>
-        <p class="txt_xl">텍스트는 이곳에</p>
-        <br>
-        <br>
-        <p class="desc">.txt_lg</p>
-        <p class="txt_lg">텍스트는 이곳에</p>
-        <br>
-        <p class="desc">.txt_md</p>
-        <p class="txt_md">텍스트는 이곳에</p>
-        <br>
-        <p class="desc">.txt_sm</p>
-        <p class="txt_sm">텍스트는 이곳에</p>
-        <br>
-        <hr>
-        <p class="desc">.align_c</p>
-        <p class="align_c">텍스트 중앙정렬</p>
-        <br>
-        <p class="desc">.align_r</p>
-        <p class="align_r">텍스트 우측정렬</p>
-        <br>
-        <hr>
-        <p class="desc">.txt_sale</p>
-        <p class="txt_sale">15%</p>
-        <br>
-        <br>
-        <p class="desc">del</p>
-        <del>16,900</del>
-        <br>
-        <br>
-        <hr>
-        <p class="desc">.txt_gray</p>
-        <p class="txt_gray">회색 텍스트 #696969 (기본 텍스트는 #010101)</p>
-        <br>
-        <p class="desc">.txt_blue</p>
-        <p class="txt_blue">파란색 텍스트 #0271e3</p>
-    </div>
+    <div class="mgb5"></div>
 
-    <div class="wrap" id="sec4">
-        <h2 class="tlt_md">[4] 버튼</h2>
-        <p class="desc">.btn_confirm</p>
-        <a href="#" class="btn_confirm">확인</a>
-        <br><br>
-        <p class="desc">.btn_cancle</p>
-        <a href="#" class="btn_cancle">취소</a>
-        <br><br>
-        <p class="desc">.btn_more</p>
-        <a href="#" class="btn_more">더보기<span></span></a>
-        <br><br>
-        <p class="desc">.btn_add</p>
-        <a href="#" class="btn_add">추가</a>
-        <br><br>
-        <p class="desc">.btn_cart</p>
-        <a href="#" class="btn_cart">장바구니</a>
-        <br><br>
-    </div>
+    <p class="desc">.prd_grid.grid4_2</p>
+    <ul class="prd_grid grid4_2">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
 
-    <div class="wrap" id="sec5">
-        <h2 class="tlt_md">[5] 배경색상</h2>
-        <p class="desc">.bg_white</p>
-        <div class="bg_white" style="padding:0.2rem;"> 장바구니에 담긴 상품은 30일동안 보관됩니다. </div>
-        <p class="desc">.bg_gray</p>
-        <div class="bg_gray" style="padding:0.2rem;"> 장바구니에 담긴 상품은 30일동안 보관됩니다. </div>
+    <div class="mgb5"></div>
 
+    <p class="desc">.prd_gridgrid3_25</p>
+    <ul class="prd_grid grid2_25">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <div class="mgb5"></div>
+
+    <p class="desc">.prd_grid.grid4_2</p>
+    <ul class="prd_grid grid3_25">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+</div>
+<!-- ------------------------------------------------- -->
+
+<div class="wrap" id="sec2">
+    <h2 class="tlt_md">[2] 타이틀</h2>
+    <p class="desc">.tlt_x2l</p>
+    <h3 class="tlt_x2l">주문내역상세</h3>
+    <p class="desc">.tlt_x2l.tlt_en</p>
+    <h3 class="tlt_x2l tlt_en">Sign In</h3>
+    <p class="desc">.tlt_xl</p>
+    <h3 class="tlt_xl">주문내역상세</h3>
+    <br>
+    <p class="desc">.tlt_lg</p>
+    <h3 class="tlt_lg">주문내역상세</h3>
+    <p class="desc">.tlt_md</p>
+    <h3 class="tlt_md">주문내역상세</h3>
+    <br>
+    <p class="desc">.tlt_sm</p>
+    <h3 class="tlt_sm">주문내역상세</h3>
+    <br>
+    <p class="desc">.tlt_xs</p>
+    <h3 class="tlt_xs">주문내역상세</h3>
+</div>
+
+<div class="wrap" id="sec3">
+    <h2 class="tlt_md">[3] 텍스트</h2>
+    <p class="desc">.txt_xl</p>
+    <p class="txt_xl">텍스트는 이곳에</p>
+    <br>
+    <br>
+    <p class="desc">.txt_lg</p>
+    <p class="txt_lg">텍스트는 이곳에</p>
+    <br>
+    <p class="desc">.txt_md</p>
+    <p class="txt_md">텍스트는 이곳에</p>
+    <br>
+    <p class="desc">.txt_sm</p>
+    <p class="txt_sm">텍스트는 이곳에</p>
+    <br>
+    <hr>
+    <p class="desc">.align_c</p>
+    <p class="align_c">텍스트 중앙정렬</p>
+    <br>
+    <p class="desc">.align_r</p>
+    <p class="align_r">텍스트 우측정렬</p>
+    <br>
+    <hr>
+    <p class="desc">.txt_sale</p>
+    <p class="txt_sale">15%</p>
+    <br>
+    <br>
+    <p class="desc">del</p>
+    <del>16,900</del>
+    <br>
+    <br>
+    <hr>
+    <p class="desc">.txt_gray</p>
+    <p class="txt_gray">회색 텍스트 #696969 (기본 텍스트는 #010101)</p>
+    <br>
+    <p class="desc">.txt_blue</p>
+    <p class="txt_blue">파란색 텍스트 #0271e3</p>
+</div>
+
+<div class="wrap" id="sec4">
+    <h2 class="tlt_md">[4] 버튼</h2>
+    <p class="desc">.btn_confirm</p>
+    <a href="#" class="btn_confirm">확인</a>
+    <br><br>
+    <p class="desc">.btn_cancle</p>
+    <a href="#" class="btn_cancle">취소</a>
+    <br><br>
+    <p class="desc">.btn_more</p>
+    <a href="#" class="btn_more">더보기<span></span></a>
+    <br><br>
+    <p class="desc">.btn_event</p>
+    <a href="#" class="btn_event">구매하기</a>
+    <br><br>
+    <p class="desc">.btn_add</p>
+    <a href="#" class="btn_add">추가</a>
+    <br><br>
+    <p class="desc">.btn_cart</p>
+    <a href="#" class="btn_cart">장바구니</a>
+    <br><br>
+</div>
+
+<div class="wrap" id="sec5">
+    <h2 class="tlt_md">[5] 배경색상</h2>
+    <p class="desc">.bg_white</p>
+    <div class="bg_white" style="padding:0.2rem;"> 장바구니에 담긴 상품은 30일동안 보관됩니다. </div>
+    <p class="desc">.bg_gray</p>
+    <div class="bg_gray" style="padding:0.2rem;"> 장바구니에 담긴 상품은 30일동안 보관됩니다. </div><br><br>
+    <p class="desc">.bg_black (배경색상만. 폰트색상은 미적용)</p>
+    <div class="bg_black txt-white" style="padding:0.2rem;"> 장바구니에 담긴 상품은 30일동안 보관됩니다. </div>
+
+</div>
+<div class="wrap" id="sec6">        
+    <h2 class="tlt_md">[6] border</h2>
+    <p class="desc">.border_btm_light, .border-btm-light</p>
+    <div class="border_btm_light" style="padding:0.2rem;">
+        연한회색 _ 아래쪽 _ border
     </div>
-    <div class="wrap" id="sec6">        
-        <h2 class="tlt_md">[6] border</h2>
-        <p class="desc">.border_btm_light, .border-btm-light</p>
-        <div class="border_btm_light" style="padding:0.2rem;">
-            연한회색 _ 아래쪽 _ border
-        </div>
-        <br><br>
-        <p class="desc">.border_btm_gray, .border-btm-gray</p>
-        <div class="border_btm_gray" style="padding:0.2rem;">
-            회색 _ 아래쪽 _ border
-        </div>
-        <br><br>
-        <p class="desc">.border_top_light, .border-top-light</p>
-        <div class="border_top_light" style="padding:0.2rem;">
-            연한회색 _ 위쪽 _ border
-        </div>
-        <br><br>
-        <p class="desc">.border_top_gray, .border-top-gray</p>
-        <div class="border_btm_light" style="padding:0.2rem;">
-            연한회색 _ 위쪽 _ border
-        </div>
+    <br><br>
+    <p class="desc">.border_btm_gray, .border-btm-gray</p>
+    <div class="border_btm_gray" style="padding:0.2rem;">
+        회색 _ 아래쪽 _ border
     </div>
+    <br><br>
+    <p class="desc">.border_top_light, .border-top-light</p>
+    <div class="border_top_light" style="padding:0.2rem;">
+        연한회색 _ 위쪽 _ border
+    </div>
+    <br><br>
+    <p class="desc">.border_top_gray, .border-top-gray</p>
+    <div class="border_btm_light" style="padding:0.2rem;">
+        연한회색 _ 위쪽 _ border
+    </div>
+</div>
 </body>
 </html>

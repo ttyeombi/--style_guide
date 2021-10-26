@@ -4,12 +4,21 @@
 body {line-height:1;}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,big,code,del,em,img,q,strong,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,ruby,section,summary,time,audio,video {vertical-align:baseline;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
-img,fieldset,iframe{border:0;}
 em,address,i,strong{font-style:normal;vertical-align:baseline;}
+img,fieldset,iframe{border:0;}
+img {vertical-align:top;}
 a {display:inline-block;}
 a,a:hover,a:active,a:link,a:visited {text-decoration:none;cursor:pointer;}
-button {cursor:pointer;}
+label,button {cursor:pointer;}
 hr{display:none;}
 legend{display:block;position:absolute;top:0;left:-9999rem;}
 dl,dt,dd,ol,ul,li{list-style:none;}
 table{width:100%;border:0;border-collapse:collapse;border-spacing:0;empty-cells:show;}
+
+/*--------------------------------------기존 reset.css 소스------------------------------------------------*/
+.bx-wrapper {margin: 0}
+a:focus {outline:none;}
+button:focus {outline:none;}
+select { -webkit-appearance: listbox; }
+input { border-radius:0;}
+select {-webkit-appearance: none; border-radius:0; padding:5px 20px 5px 5px; background: #fff url('../images/bbs_select_arrow.gif') no-repeat right center; border:1px solid #ddd;}
