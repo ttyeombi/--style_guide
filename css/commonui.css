@@ -2,10 +2,10 @@
 html {font-size:100px; font-family:'Noto Sans KR','Noto Sans','Roboto','Gotham',sans-serif;}
 body {font-size:0.16rem;}
 
-/* ###########################
+/* #####################################
             layout
     - 1420 / 985 / 980 / 600 / 500
-########################### */
+##################################### */
 /* .inner-1420, inner_1420 모두 사용 가능 */
 [class*="inner"] {margin:0 auto;}
 [class*="inner"][class*="1420"] {max-width:14.2rem;}
@@ -42,9 +42,9 @@ body {font-size:0.16rem;}
 [class*="flex"][class*="between"] {display:flex; justify-content:space-between;}
 [class*="flex"][class*="around"] {display:flex; justify-content:space-around;}
 
-/* ###########################
+/* #####################################
     product list layout
-########################### */
+##################################### */
 /* 아이템ㆍ박스 진열  .prd_grid, .prd-grid 둘 다 사용 가능 */
 [class*="prd"][class*="grid"] {display:flex; flex-wrap:wrap; justify-content:inherit; align-items:stretch; box-sizing:border-box;}
 [class*="prd"][class*="grid"]>* {box-sizing:border-box;}
@@ -75,9 +75,9 @@ body {font-size:0.16rem;}
 .grid3_25>*:nth-child(n+4) {margin-top:0.2rem;}
 
 
-/* ###########################
+/* #####################################
             margin
-########################### */
+##################################### */
 .mgb0 {margin-bottom:0;}
 .mgb1 {margin-bottom:0.1rem;}
 .mgb2 {margin-bottom:0.2rem;}
@@ -126,9 +126,9 @@ body {font-size:0.16rem;}
 .mgr9 {margin-right:0.9rem;}
 .mgr10 {margin-right:1rem;}
 
-/* ###########################
+/* #####################################
             padding
-########################### */
+##################################### */
 .pdb0 {padding-bottom:0;}
 .pdb1 {padding-bottom:0.1rem;}
 .pdb2 {padding-bottom:0.2rem;}
@@ -178,10 +178,10 @@ body {font-size:0.16rem;}
 .pdr10 {padding-right:1rem;}
 
 
-/* ###########################
+/* #####################################
             title
     - en / 2xl / xl / l / m / s / xs
-########################### */
+##################################### */
     /* 타이틀 언어별 font-family 순서*/
 [class*="tlt"][class*="en"] {font-family:'Gotham','Noto Sans KR','Noto Sans','Roboto',sans-serif;}
 
@@ -194,11 +194,11 @@ body {font-size:0.16rem;}
 [class*="tlt"][class*="xs"] {font-size:0.18rem;font-weight:bold;}
 
 
-/* ###########################
+/* #####################################
             text
     - xl / l / m / s
     - sale / white / gray / blue
-########################### */
+##################################### */
 [class*="txt"][class*="xl"] {font-size:0.3rem;}
 [class*="txt"][class*="lg"] {font-size:0.16rem;}
 [class*="txt"][class*="md"] {font-size:0.14rem;}
@@ -215,37 +215,46 @@ del {font-size:0.16rem; color:#c6c6c6; text-decoration:line-through;} /*취소�
 .align_c {text-align:center;}
 .align_r {text-align:right;}
 
-/* ###########################
+/* #####################################
             buttons
     - confirm / cancle / list / more / add / cart
-########################### */
-[class*="btn"][class*="confirm"] {padding:0 0.58rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#fff; background:#0271e3;}
-[class*="btn"][class*="cancle"] {padding:0 0.58rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#191919; background:#e0e0e0;}
-[class*="btn"][class*="list"] {padding:0 0.58rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#fff;  text-align:center;background:#0271e3;}
-[class*="btn"][class*="more"] {padding:0 0.4rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#fff; text-align:center; text-indent:-0.02rem; background:#0271e3;}
+##################################### */
+[class*="btn"][class*="confirm"] {width:1.8rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#fff; text-align:center; background:#0271e3;}
+[class*="btn"][class*="confirm"][class*="wide"] {width:100%;}
+[class*="btn"][class*="cancle"] {width:1.8rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#191919; text-align:center; background:#e0e0e0;}
+[class*="btn"][class*="list"] {width:1.8rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#fff; text-align:center; background:#0271e3;}
+[class*="btn"][class*="more"] {width:1.8rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#fff; text-align:center; text-indent:-0.02rem; background:#0271e3;}
 [class*="btn"][class*="more"] span {display:inline-block; width:0.15rem; height:0.15rem; position:relative; margin-left:0.05rem;}
 [class*="btn"][class*="more"] span::before {display:block; content:''; position:absolute; top:49%; left:50%; margin-left:-0.05rem; width:0.11rem; height:0.01rem; background-color:#fff;}
 [class*="btn"][class*="more"] span::after {display:block; content:''; position:absolute; top:49%; left:50%; margin-top:-0.05rem; width:0.01rem; height:0.11rem; background-color:#fff;}
+[class*="btn"][class*="event"] {width:1.8rem; height:0.5rem; font-size:0.18rem; line-height:0.5rem; color:#191919; text-align:center; background:#fff;}
 
 [class*="btn"][class*="add"] {width:100%; font-size:0.18rem; line-height:0.5rem; color:#fff; text-align:center; background:#0271e3;}
 [class*="btn"][class*="cart"] {width:100%; font-size:0.18rem; line-height:0.5rem; color:#191919; text-align:center; background:#f2f2f8;}
 [class*="btn"][class*="cart"]:hover {color:#fff; background:#0271e3;}
 
 
-/* ###########################
+/* #####################################
+            input
+##################################### */
+[class*="input"][class*="box"] {margin-bottom:0.2rem; width:100%; height:0.5rem; font-size:0.16rem; line-height:0.24rem; border:0.01rem solid #e0e0e0; box-sizing:border-box;}
+
+
+
+/* #####################################
             background
     - white / gray / black
-########################### */
-[class*="bg"][class="white"] {background-color:#fff;}
-[class*="bg"][class="gray"] {background-color:#f2f2f8;}
-[class*="bg"][class="black"] {background-color:#191919;}
+##################################### */
+[class*="bg"][class*="white"] {background-color:#fff;}
+[class*="bg"][class*="gray"] {background-color:#f2f2f8;}
+[class*="bg"][class*="black"] {background-color:#191919;}
 
 
-/* ###########################
+/* #####################################
             border
     - btm / top
     - light(gray) / gray
-########################### */
+##################################### */
 [class^="border"][class*="btm"][class*="light"] {border-bottom:0.01rem solid #e0e0e0;}
 [class^="border"][class*="btm"][class*="gray"] {border-bottom:0.01rem solid #c6c6c6;}
 [class^="border"][class*="top"][class*="light"] {border-top:0.01rem solid #e0e0e0;}
